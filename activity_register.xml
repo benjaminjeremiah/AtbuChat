@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.benjaminjeremiah.atbuchat.RegisterActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/register_toolbar"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_display_name"
+        android:text="@string/display_name"
+        android:inputType="text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/register_toolbar"
+        android:layout_alignEnd="@+id/register_toolbar"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login_email"
+        android:inputType="textEmailAddress"
+        android:text="@string/email"
+        android:layout_below="@+id/reg_display_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignRight="@+id/reg_display_name"
+        android:layout_alignEnd="@+id/reg_display_name"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login_password"
+        android:inputType="textVisiblePassword"
+        android:text="@string/password"
+        android:layout_below="@+id/Login_email"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/reg_display_name"
+        android:layout_alignEnd="@+id/reg_display_name"
+        android:layout_alignLeft="@+id/Login_email"
+        android:layout_alignStart="@+id/Login_email" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:id="@+id/reg_create_btn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Login_password"
+        android:layout_alignRight="@+id/Login_password"
+        android:layout_alignEnd="@+id/Login_password"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_a_new_account"
+        android:id="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/register_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#050505" />
+
+</RelativeLayout>

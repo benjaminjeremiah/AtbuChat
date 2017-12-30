@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.benjaminjeremiah.atbuchat.StatusActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/status_appBar"
+        android:layout_alignParentTop="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_input"
+        android:layout_below="@+id/status_appBar"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/status_appBar"
+        android:layout_alignEnd="@+id/status_appBar"
+        android:layout_alignLeft="@+id/status_appBar"
+        android:layout_alignStart="@+id/status_appBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:text="@string/your_status" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_changes"
+        android:id="@+id/status_save_btn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/status_input"
+        android:layout_alignRight="@+id/status_input"
+        android:layout_alignEnd="@+id/status_input" />
+
+</RelativeLayout>
